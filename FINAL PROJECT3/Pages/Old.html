@@ -169,7 +169,7 @@
         function GetListOfMsgs() {
             alert("Getting the list of emails")
             return gapi.client.gmail.users.messages.list({
-                "userId": "lolshimi99@gmail.com",
+                "userId": "rupi662022@gmail.com",
                 "includeSpamTrash": false,
                 "maxResults": 5,
                 "q": "has:attachment",
@@ -193,7 +193,7 @@
         function getattachid(id) {
             alert("In getattach ID")
             return gapi.client.gmail.users.messages.get({
-                "userId": "lolshimi99@gmail.com",
+                "userId": "rupi662022@gmail.com",
                 "id": id,
                 "format": "full"
             })
@@ -242,7 +242,7 @@
 
         function GetAttachmentFile(attach_id, msg_id) {
             return gapi.client.gmail.users.messages.attachments.get({
-                "userId": "lolshimi99@gmail.com",
+                "userId": "rupi662022@gmail.com",
                 "messageId": msg_id,
                 "id": attach_id
             })

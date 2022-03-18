@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using FINAL_PROJECT3.Models.DAL
+using FINAL_PROJECT3.Models.DAL;
 
 namespace FINAL_PROJECT3.Models
 {
