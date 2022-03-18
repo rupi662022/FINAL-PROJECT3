@@ -23,7 +23,7 @@ namespace FINAL_PROJECT3.Models
         string returnFromRepair;
         string isActive;
         string userEmail;
-        string createdDate;
+        DateTime createdDate;
 
 
         public GatePass()

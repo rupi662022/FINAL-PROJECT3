@@ -9,5 +9,7 @@ namespace FINAL_PROJECT3.Controllers
 {
     public class GatePassController : ApiController
     {
+
+
     }
 }
