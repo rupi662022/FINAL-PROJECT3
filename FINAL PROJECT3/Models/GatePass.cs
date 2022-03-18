@@ -26,8 +26,26 @@ namespace FINAL_PROJECT3.Models
         DateTime createdDate;
 
 
-        public GatePass()
-        { 
+        public GatePass(){ }
+
+        public GatePass(int id, string containerNum, string containerType, string transportCompany, string importer, string customsBroker, string shippingCompanyAndLine, string storageCertificate, string caseNumber, string note, string officeNote, string goToRepair, string returnFromRepair, string isActive, string userEmail, DateTime createdDate)
+        {
+            this.id = id;
+            this.containerNum = containerNum;
+            this.containerType = containerType;
+            this.transportCompany = transportCompany;
+            this.importer = importer;
+            this.customsBroker = customsBroker;
+            this.shippingCompanyAndLine = shippingCompanyAndLine;
+            this.storageCertificate = storageCertificate;
+            this.caseNumber = caseNumber;
+            this.note = note;
+            this.officeNote = officeNote;
+            this.goToRepair = goToRepair;
+            this.returnFromRepair = returnFromRepair;
+            this.isActive = isActive;
+            this.userEmail = userEmail;
+            this.createdDate = createdDate;
         }
 
         public int Id { get => id; set => id = value; }
