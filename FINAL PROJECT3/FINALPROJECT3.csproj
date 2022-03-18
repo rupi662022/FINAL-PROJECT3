@@ -166,6 +166,7 @@
     <Compile Include="Models\DAL\DataServices.cs" />
     <Compile Include="Models\GatePass.cs" />
     <Compile Include="Models\OCR.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
