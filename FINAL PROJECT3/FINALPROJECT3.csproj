@@ -5600,11 +5600,10 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Pages\form-layout-horizontal.html" />
+    <Content Include="Pages\CreateGatePass.html" />
     <Content Include="Pages\GatePassCreationPage.html" />
     <Content Include="Pages\login-simple.html" />
     <Content Include="Pages\Old.html" />
-    <Content Include="Pages\recover-password.html" />
     <Content Include="Pages\register-advanced.html" />
     <Content Include="Pages\table-jsgrid.html" />
     <Content Include="Scripts\bootstrap.js" />

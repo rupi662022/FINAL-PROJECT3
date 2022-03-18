@@ -84,18 +84,12 @@
                 else {
                     document.getElementById("StorageCertificate").value = "אין תעודה"
 
-
                 }
 
             }
-
-
-
             //If InportContainers isnt
             if (response.ContainerStatusResponse.InPortContainersList.length != 0)
             {
-
-
                 document.getElementById("CustomAgentName").value = response.ContainerStatusResponse.InPortContainersList[0].CustomsAgentName
                 document.getElementById("ContType").value = response.ContainerStatusResponse.InPortContainersList[0].ContainerType
                 document.getElementById("ShippingCompNamePlusLine").value = response.ContainerStatusResponse.InPortContainersList[0].ShippingAgentName + "  " + response.ContainerStatusResponse.InPortContainersList[0].StorageCode
