@@ -164,6 +164,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DAL\DataServices.cs" />
+    <Compile Include="Models\Driver.cs" />
     <Compile Include="Models\GatePass.cs" />
     <Compile Include="Models\OCR.cs" />
     <Compile Include="Models\User.cs" />
@@ -5599,8 +5600,12 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\form-layout-horizontal.html" />
     <Content Include="Pages\GatePassCreationPage.html" />
+    <Content Include="Pages\login-simple.html" />
     <Content Include="Pages\Old.html" />
+    <Content Include="Pages\recover-password.html" />
+    <Content Include="Pages\register-advanced.html" />
     <Content Include="Pages\table-jsgrid.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
