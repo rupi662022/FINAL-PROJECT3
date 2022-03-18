@@ -45,6 +45,6 @@ namespace FINAL_PROJECT3.Models
         public string ReturnFromRepair { get => returnFromRepair; set => returnFromRepair = value; }
         public string IsActive { get => isActive; set => isActive = value; }
         public string UserEmail { get => userEmail; set => userEmail = value; }
-        public string CreatedDate { get => createdDate; set => createdDate = value; }
+        public DateTime CreatedDate { get => createdDate; set => createdDate = value; }
     }
 }
