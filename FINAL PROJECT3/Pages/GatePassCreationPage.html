@@ -7,6 +7,9 @@
     </script>
     <script src="../Scripts/TaskAjax.js"></script>
     <script src="../Scripts/APIWITHKEY.js"></script>
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="../Scripts/ajaxCallsWithKey.js"></script>
+
     <!--Tghu5061990-->
     <style type="text/css">
 
@@ -133,21 +136,76 @@
         function CheckForNulls()
         {
 
-            ContType = document.getElementById("ContType").value;
-            TransportCompName = document.getElementById("TransportCompName").value;
-            ImporterName = document.getElementById("ImporterName").value;
-            CustomAgentName = document.getElementById("CustomAgentName").value;
-            ShippingCompNamePlusLine = document.getElementById("ShippingCompNamePlusLine").value;
-            ReturnPlaceName = document.getElementById("ReturnPlaceName").value;
-            StorageCertificate = document.getElementById("StorageCertificate").value;
-            AccountIDNum = document.getElementById("AccountIDNum").value;
-            Comments = document.getElementById("Comments").value;
-            OfficeComents = document.getElementById("AccountIDNum").value;
-            WorkerName = document.getElementById("WorkerName").value;
+            let gatePass = {
+                ContainerNum: document.getElementById("ContainerNum").value,
+                containerType: document.getElementById("ContType").value,
+                TransportCompany: document.getElementById("TransportCompName").value,
+                Importer: document.getElementById("ImporterName").value,
+                CustomsBroker: document.getElementById("CustomAgentName").value,
+                ShippingCompanyAndLine: document.getElementById("ShippingCompNamePlusLine").value,
+                StorageCertificate: document.getElementById("StorageCertificate").value,
+                CaseNumber: document.getElementById("AccountIDNum").value,
+                Note: document.getElementById("Comments").value,
+                OfficeNote: document.getElementById("OfficeComents").value,
+                GoToRepair: document.getElementById("SendToMaintinance").value,
+                ReturnFromRepair: document.getElementById("ReturnedFromMaintinance").value,
+                UserEmail: document.getElementById("WorkerName").value,
+                IsActive: "+",
+                CreatedDate: "10/05/2020"
+            }
+
+            ajaxCall("POST", "../api/GatePass", JSON.stringify(gatePass), postSuccessCB, postErrorCB);
+
+            return false;
+
+        }
+        //{
+        //    this.id = id;
+        //    this.containerNum = containerNum;
+        //    this.containerType = containerType;
+        //    this.transportCompany = transportCompany;
+        //    this.importer = importer;
+        //    this.customsBroker = customsBroker;
+        //    this.shippingCompanyAndLine = shippingCompanyAndLine;
+        //    this.storageCertificate = storageCertificate;
+        //    this.caseNumber = caseNumber;
+        //    this.note = note;
+        //    this.officeNote = officeNote;
+        //    this.goToRepair = goToRepair;
+        //    this.returnFromRepair = returnFromRepair;
+        //    this.isActive = isActive;
+        //    this.userEmail = userEmail;
+        //    this.createdDate = createdDate;
+
+        //function postGatePass() {
+
+        //        let gatePass = { // must be identical to the names of the properties
+        //            ContainerNum: containerNum,
+        //            CntainerType: containerType,
+        //            Importer: importer,
+        //            CustomsBroker: customsBroker,
+        //            ShippingCompanyAndLine: shippingCompanyAndLine,
+        //            StorageCertificate: storageCertificate,
+        //            CaseNumber: caseNumber,
+        //            Note: note,
+        //            officeNote: officeNote,
+        //            GoToRepair: goToRepair,
+        //            ReturnFromRepair:returnFromRepair,
+        //    }
+
+
+        //    ajaxCall("POST", "../api/GatePass", JSON.stringify(gatePass), postSuccessCB, postErrorCB);
+
+        //}
 
 
 
+        function postSuccessCB() {
+            console.log("success");
+        }
 
+        function postErrorCB(err) {
+            alert(err.responseJSON.ExceptionMessage);
         }
 
     </script>
@@ -200,11 +258,11 @@
                         <input id="CustomAgentName" />
 
                         <!--<select id="cars">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
-                        </select>-->
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>-->
                     </td>
                     <td class="TDtext">
                         :עמיל מכס
@@ -270,6 +328,14 @@
                 <tr>
                     <td>
                         <button onclick="CreateGatePass()" id="GatePassBTN">ייבא נתוני גייטפאס </button>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <button onclick="CheckForNulls()" id="GatePassCreate">צור </button>
                     </td>
 
                 </tr>
