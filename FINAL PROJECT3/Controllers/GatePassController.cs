@@ -10,10 +10,10 @@ namespace FINAL_PROJECT3.Controllers
 {
     public class GatePassController : ApiController
     {
-        public int Post([FromBody] GatePass gatePass)
-        {
-            return gatePass.InsertGate();
-        }
+        //public int Post([FromBody] GatePass gatePass)
+        //{
+        //    return gatePass.InsertGate();
+        //}
 
 
     }

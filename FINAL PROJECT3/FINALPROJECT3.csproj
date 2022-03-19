@@ -160,6 +160,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\GatePassController.cs" />
     <Compile Include="Controllers\OCRController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -5601,12 +5602,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Pages\CreateGatePass.html" />
-    <Content Include="Pages\form-layout-basic.html" />
     <Content Include="Pages\GatePassCreationPage.html" />
-    <Content Include="Pages\login-simple.html" />
+    <Content Include="Pages\Login.html" />
     <Content Include="Pages\Old.html" />
-    <Content Include="Pages\register-advanced.html" />
+    <Content Include="Pages\register.html" />
     <Content Include="Pages\ManageGates.html" />
+    <Content Include="Scripts\ajaxCalls.js" />
+    <Content Include="Scripts\ajaxCallsWithKey.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
