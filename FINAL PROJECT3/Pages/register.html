@@ -14,7 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
 	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/icheck/icheck.css">
 	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/icheck/custom.css">
-
 	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
 	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
 	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/horizontal-menu.css">
@@ -26,16 +25,14 @@
 
 	<script>
 
-		//$(document).ready(function () {
-		//	$("#myForm").submit(submitUser)
-		//	$("#login").click(movetologin)
-		//	if (localStorage.getItem('User')) {
-		//		window.location.href = "insert.html";
-		//	}
-		//})
-		//function movetologin() {
-		//	window.location.href = "Login.html";
-		//}
+		$(document).ready(function () {
+			$("#myForm").submit(submitUser)
+
+			if (localStorage.getItem('User')) {
+				window.location.href = "ManageGates.html";
+			}
+		})
+
 
 		function submitUser() {
             let userNum = $("#userNum").val();
@@ -121,14 +118,6 @@
 										</div>
 									</fieldset>
 								</div>
-								<!--<div class="col-12 col-sm-6 col-md-6">
-									<fieldset class="form-group position-relative has-icon-left">
-										<input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
-										<div class="form-control-position">
-										    <i class="ft-user"></i>
-										</div>
-									</fieldset>
-								</div>-->
 							</div>
 							<fieldset class="form-group position-relative has-icon-left">
 								<input type="text" name="display_name" id="userFull" class="form-control input-lg" placeholder="שם מלא" tabindex="3"  required>
@@ -154,34 +143,15 @@
 										<div class="help-block font-small-3"></div>
 									</fieldset>
 								</div>
-								<!--<div class="col-12 col-sm-6 col-md-6">
-									<fieldset class="form-group position-relative has-icon-left">
-										<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6" data-validation-matches-match="password" data-validation-matches-message="Password & Confirm Password must be the same.">
-										<div class="form-control-position">
-										    <i class="fa fa-key"></i>
-										</div>
-										<div class="help-block font-small-3"></div>
-									</fieldset>
-								</div>-->
 							</div>
-							<!--<div class="row mb-1">
-								<div class="col-4 col-sm-3 col-md-3">
-									<fieldset>
-						                <input type="checkbox" id="remember-me" class="chk-remember">
-						                <label for="remember-me"> I Agree</label>
-						            </fieldset>
-								</div>
-								<div class="col-8 col-sm-9 col-md-9">
-									 <p class="font-small-3">By clicking Register, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.</p>
-								</div>
-							</div>-->
 							<div class="row">
-								<!--<div class="col-12 col-sm-6 col-md-6">
-									<button type="submit" class="btn btn-info btn-lg btn-block"><i class="ft-user"></i> הירשם</button>
-								</div>-->
 								<div class="col-12 col-sm-8 col-md-8">
 									<!--<input type="submit" class="btn btn-danger btn-lg btn-block" value="התחבר" required />-->
 									<button onclick="submitUser()" type="submit" class="btn btn-info btn-lg btn-block"> הירשם</button>
+								</div>
+								<div class="">
+									<br />
+									<p class="float-sm-right text-center m-0">יש לך חשבון? <a href="Login.html" class="card-link">התחבר</a></p>
 								</div>
 							</div>
 						</form>
@@ -201,20 +171,12 @@
       <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2 container center-layout"><span class="float-md-left d-block d-md-inline-block">Copyright  &copy; 2018 <a class="text-bold-800 grey darken-2" href="https://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">PIXINVENT </a>, All rights reserved. </span><span class="float-md-right d-block d-md-inline-blockd-none d-lg-block">Hand-crafted & Made with <i class="ft-heart pink"></i></span></p>
     </footer>-->
 
-    <!-- BEGIN VENDOR JS-->
     <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
-    <!-- BEGIN VENDOR JS-->
-    <!-- BEGIN PAGE VENDOR JS-->
     <script src="../../../app-assets/vendors/js/ui/jquery.sticky.js"></script>
     <script src="../../../app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
     <script src="../../../app-assets/vendors/js/forms/icheck/icheck.min.js"></script>
-    <!-- END PAGE VENDOR JS-->
-    <!-- BEGIN ROBUST JS-->
     <script src="../../../app-assets/js/core/app-menu.js"></script>
     <script src="../../../app-assets/js/core/app.js"></script>
-    <!-- END ROBUST JS-->
-    <!-- BEGIN PAGE LEVEL JS-->
     <script src="../../../app-assets/js/scripts/forms/form-login-register.js"></script>
-    <!-- END PAGE LEVEL JS-->
   </body>
 </html>
