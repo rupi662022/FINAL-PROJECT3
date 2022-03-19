@@ -8,7 +8,7 @@ namespace FINAL_PROJECT3.Models
 {
     public class GatePass
     {
-        int id;
+        int gateId;
         string containerNum;
         string containerType;
         string transportCompany;
@@ -28,9 +28,9 @@ namespace FINAL_PROJECT3.Models
 
         public GatePass(){ }
 
-        public GatePass(int id, string containerNum, string containerType, string transportCompany, string importer, string customsBroker, string shippingCompanyAndLine, string storageCertificate, string caseNumber, string note, string officeNote, string goToRepair, string returnFromRepair, string isActive, string userEmail, DateTime createdDate)
+        public GatePass(int gateId, string containerNum, string containerType, string transportCompany, string importer, string customsBroker, string shippingCompanyAndLine, string storageCertificate, string caseNumber, string note, string officeNote, string goToRepair, string returnFromRepair, string isActive, string userEmail, DateTime createdDate)
         {
-            this.id = id;
+            this.gateId = gateId;
             this.containerNum = containerNum;
             this.containerType = containerType;
             this.transportCompany = transportCompany;
@@ -48,7 +48,7 @@ namespace FINAL_PROJECT3.Models
             this.createdDate = createdDate;
         }
 
-        public int Id { get => id; set => id = value; }
+        public int GateId { get => gateId; set => gateId = value; }
         public string ContainerNum { get => containerNum; set => containerNum = value; }
         public string ContainerType { get => containerType; set => containerType = value; }
         public string TransportCompany { get => transportCompany; set => transportCompany = value; }
@@ -64,5 +64,14 @@ namespace FINAL_PROJECT3.Models
         public string IsActive { get => isActive; set => isActive = value; }
         public string UserEmail { get => userEmail; set => userEmail = value; }
         public DateTime CreatedDate { get => createdDate; set => createdDate = value; }
+
+
+
+
+
+
+
+
+
     }
 }
