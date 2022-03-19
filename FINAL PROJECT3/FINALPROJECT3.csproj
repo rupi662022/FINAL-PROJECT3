@@ -5601,11 +5601,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Pages\CreateGatePass.html" />
+    <Content Include="Pages\form-layout-basic.html" />
     <Content Include="Pages\GatePassCreationPage.html" />
     <Content Include="Pages\login-simple.html" />
     <Content Include="Pages\Old.html" />
     <Content Include="Pages\register-advanced.html" />
-    <Content Include="Pages\table-jsgrid.html" />
+    <Content Include="Pages\ManageGates.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
